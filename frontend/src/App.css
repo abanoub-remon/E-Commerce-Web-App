@@ -1,0 +1,150 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --gray-100: #f8fafc;
+  --gray-300: #e5e7eb;
+  --gray-600: #6b7280;
+  --gray-900: #111827;
+  --radius: 12px;
+  --shadow-sm: 0 6px 18px rgba(0,0,0,.06);
+  --shadow-md: 0 14px 28px rgba(0,0,0,.08);
+}
+
+body {
+  background: #f9fafb;
+  font-family: "Inter", "Cairo", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial;
+  color: var(--gray-900);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.card {
+  border-radius: var(--radius);
+  border: 0;
+}
+
+.card.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover:not(.no-hover) {
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.navbar {
+  box-shadow: var(--shadow-sm);
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 .15rem rgba(37, 99, 235, .25);
+  border-color: var(--primary);
+}
+
+input[type="file"] {
+  padding: 6px;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 500;
+}
+
+.hover-card {
+  transition: all .18s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.fade-in {
+  animation: fade .25s ease;
+}
+
+@keyframes fade {
+  from { opacity: .4; transform: translateY(3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: .75rem;
+}
+
+.table thead th {
+  font-weight: 600;
+  background: #f4f6fb;
+}
+
+body {
+  background: #f9fafb;
+  font-family: "Inter", "Cairo", system-ui;
+  color: #111827;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card {
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+h2, h3, h4 {
+  margin-bottom: .75rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(1);
+  width: 28px;
+  height: 28px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #6b7280;
+}
+
+.carousel-indicators .active {
+  background-color: #111827;
+}
