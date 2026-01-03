@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-	baseURL: "http://localhost:8000/api",
+	baseURL: "https://abanoubremon.pythonanywhere.com/api",
+	withCredentials: true,
 });
 
 api.interceptors.request.use((config) => {
